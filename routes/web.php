@@ -19,6 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('users','UserController')->name('users');
-Route::resource('skills','SkillController')->name('skills');
-Route::resource('users.skills','SkillSetController');
+Route::get('skills','SkillController@index')->name('skills');
+// Route::resource('users','UserController')->name('users');
+// Route::resource('users.skills','SkillSetController');

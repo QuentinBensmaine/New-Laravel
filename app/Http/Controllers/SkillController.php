@@ -14,7 +14,7 @@ class SkillController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -24,7 +24,6 @@ class SkillController extends Controller
      */
     public function create()
     {
-
     }
 
     /**
@@ -46,7 +45,6 @@ class SkillController extends Controller
      */
     public function show(Skill $skill)
     {
-
     }
 
     /**
@@ -57,7 +55,6 @@ class SkillController extends Controller
      */
     public function edit(Skill $skill)
     {
-        
     }
 
     /**
@@ -69,7 +66,14 @@ class SkillController extends Controller
      */
     public function update(Request $request, Skill $skill)
     {
-        //
+        // Skill->create($tableau_de_donnees_de_creation);  //$tableau_de_donnees_de_creation provient de l'extraction des données propres à la création depuis la requête $request 
+        // //ou encore (ne mettre que ce qu'il y a au dessous ou en dessous mais les deux) 
+        // $skill = new Skill();
+        // $skill->name = $request->name; 
+        // $skill->save(); 
+        // //Maintenant que les actions comme tu dis sont effectuées, tu peux renvoyer une vue, par exemple la liste de tous les skills : 
+        // $skills = Skill::all(); 
+        // return view('skills.index', ['skills', $skills]); 
     }
 
     /**
